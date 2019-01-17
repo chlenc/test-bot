@@ -1,0 +1,22 @@
+{
+  "name": "testbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@waves/waves-api": "1.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "config": "^2.0.1",
+    "firebase-admin": "^6.5.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "nodemon": "^1.18.9",
+    "socks5-https-client": "^1.2.1",
+    "waves-api": "^0.24.2"
+  }
+}
