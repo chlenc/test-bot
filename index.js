@@ -53,7 +53,6 @@ bot.onText(/\/send (.+)/, function (msg, match) {
     Waves.API.Node.transactions.broadcast('transfer', transferData, seed.keyPair).then((responseData) => {
         bot.sendMessage(msg.chat.id, (1000000000 / Math.pow(10, 8)) + ' токенов Waves зачислено вам.');
     }).catch(function (e) {
-        console.log(e)
         switch (e.data.error) {
             case 112:
                 bot.sendMessage(msg.chat.id, 'Извините, боту не хватает денег. Пожалуйста, попробуйте позже.');
